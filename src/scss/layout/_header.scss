@@ -1,0 +1,48 @@
+.header {
+    background-color: $grisOscuro;
+    padding: $separacion / 2;
+}
+.barra {
+    
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+    }
+}
+
+.header.inicio {
+    background-image: url(../img/header.jpg);
+    
+    background-size: cover;
+   
+    h1 {
+        color: $blanco;
+        font-weight: bold;
+        max-width: 60rem;
+        text-align: left;
+
+    }
+    .contenido-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        
+        @include tablet {
+                min-height: 70rem;
+            }
+        
+    }
+    
+    
+}
+

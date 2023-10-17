@@ -1,0 +1,16 @@
+.contenido-nosotros {
+    @include tablet {
+        @include grid (2, 2rem)
+    }
+}
+.img-nosotros {
+    margin-top: 2rem;
+}
+.texto-nosotros {
+    h3 {
+        margin-top: 0;
+        font-weight: bold;
+        text-align: left;
+
+    }
+}

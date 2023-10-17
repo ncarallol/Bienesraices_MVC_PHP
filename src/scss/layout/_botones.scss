@@ -1,0 +1,33 @@
+.boton {
+    cursor: pointer;
+}
+.boton-amarillo-block {
+    @include boton ($amarillo, block);
+}
+.boton-verde {
+    @include boton ($verde, block);
+}
+.boton-amarillo {
+    @include boton ($amarillo, block);
+    margin: 4rem;
+}
+.boton-verde {
+    @include tablet {
+    @include boton ($verde, inline-block);
+}
+    
+}
+.boton-amarillo {
+    @include tablet {
+    @include boton ($amarillo, inline-block);
+}
+    
+}
+.boton-rojo-block {
+    @include boton ($rojo, block);
+    margin: 1rem 0;
+}
+.boton-amarillo-block {
+    @include boton ($amarillo, block);
+    margin: 1rem 0;
+}
